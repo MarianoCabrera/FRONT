@@ -16,7 +16,7 @@ export default function HomePage({addToCart}) {
   return (
     <>
       <header>
-        <button className="btn btn-secondary" type="button">Carrito</button>
+        <button className="btn btn-secondary" type="button">Carrito de compra</button>
       </header>
       <div>
         <Productos productos={productos} addToCart={addToCart} />
