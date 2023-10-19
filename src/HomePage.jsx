@@ -1,5 +1,6 @@
 import './App.css';
-import Productos from './producto';
+import NavBar from './NavBar';
+import { ListadoProductos } from './Productos';
 import * as API from './servicios/servicios';
 import { useEffect, useState, } from 'react';
 import React from "react";
@@ -15,11 +16,10 @@ export default function HomePage({addToCart}) {
 
   return (
     <>
-      <header>
-        <button className="btn btn-secondary" type="button">Carrito de compra</button>
+      <header className='cabecera'>
       </header>
       <div>
-        <Productos productos={productos} addToCart={addToCart} />
+        <ListadoProductos/>
       </div>
     </>
   );

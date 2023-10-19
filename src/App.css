@@ -25,3 +25,19 @@
   padding: 10px;
   background-color: #f9f9f9;
 }
+
+.cabecera {
+  margin-bottom: 4%;
+}
+
+.imgcart {
+width: 10px;
+height: 35px;
+margin-top: 4px;
+margin-left: 15px;
+}
+
+.iconcart {
+  width: 35px;
+  height: 35px;
+}

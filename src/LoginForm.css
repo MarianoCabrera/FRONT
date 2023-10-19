@@ -1,0 +1,67 @@
+
+h1 {
+    text-align:left;
+    margin-bottom: 10px;
+  }
+
+  .titulito{
+    color: white;
+    animation: brillo 3s infinite;
+    padding-left: 14%;
+  }
+  
+  .login-form-container {
+    background-color: #1B2349;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px; /* Establece un ancho máximo para el formulario */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
+    padding: 50px;
+    margin-top: 50px;
+  }
+  
+  .form-group-small {
+    color: white;
+    max-width: 300px;
+    width: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 1px 1px 1px #ffffff;
+    animation: brillo 3s infinite;
+    padding-top: 2%;
+  }
+  @keyframes brillo {
+    0% {
+      text-shadow: 0 0 10px #ffffff;
+    }
+    50% {
+      text-shadow: 0 0 20px #ffffff;
+    }
+    100% {
+      text-shadow: 0 0 10px #ffffff;
+    }
+  }
+  
+  .form-group-center {
+    text-align:center;
+    padding: 5% 5% 5%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .login-header {
+      color: white;
+      height: 10vh;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .login-form-container {
+      max-width: 100%; /* Usa el ancho completo en pantallas pequeñas */
+    }
+  
+    .form-group-small {
+      color: white;
+      max-width: 300px;
+    }
+  }

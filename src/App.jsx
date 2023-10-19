@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import NavBar from './NavBar'
+import { Login } from './Login';
+import { RegistroUsuario } from './Registro';
 import HomePage from './HomePage';
-import Cart from './cart';
-import Productos from './producto';
-import { Formulario } from './Formulario';
-
-
+import { EditarProductos } from './Editar';
 
 
 function App() {
@@ -22,10 +22,17 @@ function App() {
 
   return (
     <>
-      <Formulario setUser={setUser} />
-      <Productos productos={[]} addToCart={addToCart} />
-      <HomePage addToCart={addToCart} />
-      <Cart cartItems={cartItems} />
+     
+     <NavBar/>
+
+        <Routes>
+        <Route path='/editar' element = {<EditarProductos/>}></Route>
+        <Route path='/' element = {<HomePage/>}></Route>
+        <Route path='/registroUsuario' element = {<RegistroUsuario/>}></Route>
+        <Route path='/login' element = {<Login/>}></Route>
+        
+
+        </Routes>
 
 
 
